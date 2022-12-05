@@ -3,17 +3,17 @@ import { ethers } from "ethers";
 const AbIs = require("./resource/abis.json");
 const Addresses = require("./resource/addresses.json");
 
-const supportChainId = 56;
+const supportChainId = 42161;
 
 const RPCS = {
-    56: "https://bsc-dataseed.binance.org/",
+    42161: "https://arb1.arbitrum.io/rpc",
     // 4002: "https://rpc.testnet.fantom.network",
     // 1337: "http://localhost:7545",
     // 31337: "http://localhost:8545/",
 };
 
 const providers = {
-    56: new ethers.providers.JsonRpcProvider(RPCS[supportChainId]),
+    42161: new ethers.providers.JsonRpcProvider(RPCS[supportChainId]),
     // 4002: new ethers.providers.JsonRpcProvider(RPCS[4002]),
     // 1337: new ethers.providers.JsonRpcProvider(RPCS[1337]),
     // 31337: new ethers.providers.JsonRpcProvider(RPCS[31337]),

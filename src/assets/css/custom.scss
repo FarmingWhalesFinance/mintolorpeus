@@ -178,6 +178,7 @@ body {
 }
 .ecosystem {
     display: flex;
+    background-color: black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -185,7 +186,7 @@ body {
         width: 80%;
         div {
             padding: 0 30px;
-        }
+        }s
         span {
             img {
                 width: 35%;

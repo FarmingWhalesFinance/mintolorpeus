@@ -126,10 +126,10 @@ export default function Main() {
             return;
         }
 
-        let tokenAddress = "0xe329102DA0E7E135656CD72CDc983c81f27CB5B6";
-        let tokenSymbol = "XBT";
+        let tokenAddress = "0x5bb73c1df811114b8482F4d25f1B71b25459C924";
+        let tokenSymbol = "TFI";
         let tokenDecimals = 18;
-        let tokenImage = "https://babylonswap.finance/favicon.ico";
+        let tokenImage = "https://i.imgur.com/EYTTZLG.png";
 
         try {
             // wasAdded is a boolean. Like any RPC method, an error may be thrown.
@@ -157,10 +157,10 @@ export default function Main() {
 
             {/* Begin Header */}
             <div className="container">
-                <a href="https://babylonswap.finance">
+                <a href="https://www.tradefiswap.com/">
                     <div className="header">
                         <img src={logo} alt="" />
-                        <h3>BabylonSwap</h3>
+                        <h3>Tradefi</h3>
                     </div>
                 </a>
             </div>
@@ -172,7 +172,7 @@ export default function Main() {
             <section className="mainboard">
                 <div className="container">
                     <div className="flex center middle text-center">
-                        <h2>Crypto & DeFi Investing Perfected & Simplified</h2>
+                        <h2>Tradefi Presale</h2>
                     </div>
 
                     {/* Begin Presale Card */}
@@ -181,7 +181,7 @@ export default function Main() {
                             <h4>
                                 {state.terms
                                     ? state.terms.status
-                                    : "Presale start in"}
+                                    : "Presale starts in"}
                             </h4>
 
                             <div className="row time">
@@ -227,7 +227,7 @@ export default function Main() {
                             <div className="presale__content">
                                 <div className="row">
                                     <div className="col-sm-4 col-xs-12">
-                                        <span>Symbol: XBT</span>
+                                        <span>Symbol: TFI</span>
                                     </div>
                                     <div className="col-sm-4 col-xs-12">
                                         <span>Price: {state.price}</span>
@@ -241,24 +241,24 @@ export default function Main() {
                                 <div className="spacer-10"></div>
 
                                 <div className="slider">
-                                    <span>
+                                    {/* <span>
                                         Sold Amount (
                                         {Number(state.totalSold).toFixed(2)} $)
-                                    </span>
-                                    <div className="bar">
+                                    </span> */}
+                                    {/* <div className="bar">
                                         <div
                                             style={{ width: `${percent}%` }}
                                         ></div>
-                                    </div>
-                                    <div className="spacer-10"></div>
-                                    <div className="status_bar">
+                                    </div> */}
+                                    {/* <div className="spacer-10"></div> */}
+                                    {/* <div className="status_bar">
                                         <div>
                                             <span>softcap (300K $)</span>
                                         </div>
                                         <div>
                                             <span>hardcap (700K $)</span>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="spacer-double"></div>
 
                                     <div className="presale__control">
@@ -268,8 +268,8 @@ export default function Main() {
                                                 setFlag(e.target.value)
                                             }
                                         >
-                                            <option value={1}>BNB</option>
-                                            <option value={2}>BUSD</option>
+                                            <option value={1}>ETH</option>
+                                            <option value={2}>USDC</option>
                                         </select>
                                     </div>
                                     <br />
@@ -309,7 +309,7 @@ export default function Main() {
                                                     className="button-white"
                                                     onClick={handleBuy}
                                                 >
-                                                    Buy XBT Now
+                                                    Buy TFI Now
                                                 </button>
                                             )
                                         ) : (
@@ -332,29 +332,16 @@ export default function Main() {
 
                 {/* Begin Ecosystem Info */}
                 <div className="ecosystem">
-                    <h2>Ecosystem</h2>
+                    <h2>What makes us different?</h2>
                     <div className="row text-center">
                         <div className="col-md-4 col-sm-12">
                             <span>
                                 <img src={sub1} alt="" />
-                                <h4>Limited Supply Vs Unlimited Demand</h4>
+                                <h4>200x leverage</h4>
                                 <p>
-                                    Babylon Token (XBT) is a very scarce asset
-                                    with unlimited demand from the stakers and
-                                    the players of the revolutionary Casino{" "}
-                                    <a href="https://game.babylonswap.finance">
-                                        BabylonGame
-                                    </a>{" "}
-                                    which can be accessed from the{" "}
-                                    <a href="https://babylonswap.finance">
-                                        BabylonSwap
-                                    </a>{" "}
-                                    portal. Babylon Token (XBT) is the first
-                                    ever perfectly pegged asset in human history
-                                    thanks to the unalterable unhackable preset
-                                    parameters of{" "}
-                                    <a href="https://babylonswap.finance">
-                                        BabylonSwap
+                                    Unlike most of our competitors that offer only up to 50x leverage,tradefi allows its users to use up to 200x leverage on various crypto pairs. Leverage is a potent tool in the right hands but can also be extremely risky. We only recommend its use for experienced traders. You can check our beta version here:{" "}
+                                    <a href="https://app.tradefiswap.com/#/trade">
+                                        Tradefiswap
                                     </a>
                                     .
                                 </p>
@@ -364,30 +351,18 @@ export default function Main() {
                             <span>
                                 <img src={sub2} alt="" />
                                 <h4>
-                                    100% of the Presale Funds Will Go To
-                                    Strategic Adding of Liquidity:
+                                    Wide variety of assets
                                 </h4>
                                 <p>
-                                    Every BUSD and BNB that arrives to the
-                                    Babylon Treasury from this Presale will be
-                                    used to add liquidity to the XBT markets
-                                    inside{" "}
-                                    <a href="https://babylonswap.finance">
-                                        BabylonSwap
-                                    </a>{" "}
-                                    in the most strategic way possible. We
-                                    choose to do it strategically to maximize
-                                    the gains of the XBT hodlers and optimize
-                                    the price discovery mechanism of XBT and
-                                    make the price stabilize at the highest
-                                    possible levels. This is possible thanks to
-                                    the unhackable unalterable preset parameters
-                                    of{" "}
-                                    <a href="https://babylonswap.finance">
-                                        BabylonSwap
-                                    </a>{" "}
-                                    which offer the concept of Perfect Peg for
-                                    the first time in human history.
+                                    We have revolutionized the idea of trading with crypto. Up until now, trading in crypto has been a very narrow street.Little to no options apart from trading with low leverage other cryptocurrencys or depositing on a CEX for a wider variety of assets at the cost of losing anonymity. Here is where tradefi steps in as a pioneer of decentralized trading. We offer stocks,forex and crypto futures/options trading all of witch can be done from your browser wallet in a decentralized way. See the following link for more details {" "}
+                                    <a href="https://tradefi.gitbook.io/tradefi-the-future-of-trading/features/crypto-trading">
+                                        TradefiDocs
+                                    </a>{" "}.
+                                    You can also check out our beta crypto options trading platform :
+                                    {" "}
+                                    <a href="https://options.tradefiswap.com/">
+                                        Tradefi Options.
+                                    </a>
                                 </p>
                             </span>
                         </div>
@@ -395,26 +370,14 @@ export default function Main() {
                             <span>
                                 <img src={sub3} alt="" />
                                 <h4>
-                                    Babylon Token (XBT) is everything Satoshi
-                                    Nakamoto ever wanted but was never able to
-                                    do
+                                    Decentralized Funded accounts
                                 </h4>
                                 <p>
-                                    Blockchain is about abundance, not scarcity.
-                                    Kindly read the{" "}
-                                    <a href="https://babylonswap.gitbook.io/">
-                                        Glossary
-                                    </a>{" "}
-                                    section in the{" "}
-                                    <a href="https://babylonswap.finance">
-                                        BabylonSwap
-                                    </a>{" "}
-                                    Website to understand exactly what we mean
-                                    and to understand why investing any amount
-                                    in this Presale will be the most important
-                                    step you’ll ever make to achieve your
-                                    natural right of being financially free for
-                                    the rest of your life.
+                                Our end goal is to create a Decentralized prop firm where users will be able to trade crypto, stocks and forex with up to 150k funded money all while maintaining users identity private. Although prop firms aren't a new concept in the broader financial system, they are definitely in their infant stage in crypto. Interested in knowing more? Check out our docs{" "}
+                                    <a href="https://tradefi.gitbook.io/tradefi-the-future-of-trading/features/decentralized-funded-accounts-dfa">
+                                        TradefiDecentralizedFundedAccounts
+                                    </a>
+                                    .
                                 </p>
                             </span>
                         </div>
@@ -428,13 +391,13 @@ export default function Main() {
 
             {/* Begin Footer */}
             <section className="footer">
-                <a href="https://babylonswap.finance">
+                <a href="https://www.tradefiswap.com/">
                     <div>
                         <img src={logo} alt="" />
-                        <h3>BabylonSwap</h3>
+                        <h3>TradefiSwap</h3>
                     </div>
                 </a>
-                <p>Copyright &copy; 2022</p>
+                <p>2022 &copy; TradeFi: 🌐Decentralization, transparency and community</p>
             </section>
             {/* End Footer */}
         </div>
