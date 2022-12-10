@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useWallet } from "use-wallet";
+import { useWallet } from "use-wallet2";
 
 import { useBlockchainContext } from "../context";
 import { Toast } from "../utils/message";
@@ -157,10 +157,10 @@ export default function Main() {
 
             {/* Begin Header */}
             <div className="container">
-                <a href="https://www.tradefiswap.com/">
+                <a href="https://www.gxpprotocol.com/">
                     <div className="header">
                         <img src={logo} alt="" />
-                        <h3>Tradefi</h3>
+                        <h3>Galaxy Protocol</h3>
                     </div>
                 </a>
             </div>
@@ -391,13 +391,13 @@ export default function Main() {
 
             {/* Begin Footer */}
             <section className="footer">
-                <a href="https://www.tradefiswap.com/">
+                <a href="https://www.gxpprotocol.com/">
                     <div>
                         <img src={logo} alt="" />
-                        <h3>TradefiSwap</h3>
+                        <h3>Galaxy Protocol</h3>
                     </div>
                 </a>
-                <p>2022 &copy; TradeFi: 🌐Decentralization, transparency and community</p>
+                <p>2022 &copy;🪐Galaxy Protocol</p>
             </section>
             {/* End Footer */}
         </div>

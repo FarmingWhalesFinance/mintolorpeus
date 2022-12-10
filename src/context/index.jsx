@@ -6,7 +6,7 @@ import React, {
     useEffect,
 } from "react";
 import { ethers } from "ethers";
-import { useWallet } from "use-wallet";
+import { useWallet } from "use-wallet2";
 
 import {
     presaleContract,

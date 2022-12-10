@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { UseWalletProvider } from "use-wallet";
+import { UseWalletProvider } from "use-wallet2";
 import { ToastContainer } from "react-toastify";
 
 import App from "./App";
