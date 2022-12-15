@@ -126,10 +126,10 @@ export default function Main() {
             return;
         }
 
-        let tokenAddress = "0x5bb73c1df811114b8482F4d25f1B71b25459C924";
-        let tokenSymbol = "TFI";
+        let tokenAddress = "0x5e6F1b30e5820C69E8aD125a5C89089093188691";
+        let tokenSymbol = "GXP";
         let tokenDecimals = 18;
-        let tokenImage = "https://i.imgur.com/EYTTZLG.png";
+        let tokenImage = "https://i.imgur.com/NrT2JUw.png";
 
         try {
             // wasAdded is a boolean. Like any RPC method, an error may be thrown.
@@ -171,9 +171,9 @@ export default function Main() {
             {/* Begin Mainboard */}
             <section className="mainboard">
                 <div className="container">
-                    <div className="flex center middle text-center">
-                        <h2>Tradefi Presale</h2>
-                    </div>
+                  {/*   <div className="flex center middle text-center">
+                        <h2>$GXP INITIAL MINT</h2>
+                    </div> */}
 
                     {/* Begin Presale Card */}
                     <div className="card">
@@ -227,7 +227,7 @@ export default function Main() {
                             <div className="presale__content">
                                 <div className="row">
                                     <div className="col-sm-4 col-xs-12">
-                                        <span>Symbol: TFI</span>
+                                        <span>Symbol: GXP</span>
                                     </div>
                                     <div className="col-sm-4 col-xs-12">
                                         <span>Price: {state.price}</span>
@@ -269,7 +269,7 @@ export default function Main() {
                                             }
                                         >
                                             <option value={1}>ETH</option>
-                                            <option value={2}>USDC</option>
+                                            <option value={2}>DAI</option>
                                         </select>
                                     </div>
                                     <br />
@@ -309,7 +309,7 @@ export default function Main() {
                                                     className="button-white"
                                                     onClick={handleBuy}
                                                 >
-                                                    Buy TFI Now
+                                                    Mint GXP Now
                                                 </button>
                                             )
                                         ) : (
@@ -337,11 +337,26 @@ export default function Main() {
                         <div className="col-md-4 col-sm-12">
                             <span>
                                 <img src={sub1} alt="" />
-                                <h4>200x leverage</h4>
+                                <br></br>
+                                <h4>Single-stake vaults</h4>
                                 <p>
-                                    Unlike most of our competitors that offer only up to 50x leverage,tradefi allows its users to use up to 200x leverage on various crypto pairs. Leverage is a potent tool in the right hands but can also be extremely risky. We only recommend its use for experienced traders. You can check our beta version here:{" "}
-                                    <a href="https://app.tradefiswap.com/#/trade">
-                                        Tradefiswap
+                                The Galaxy Protocol's single-stake vaults employ a strategy called pseudo-delta-neutrality, that allows users to earn profits from neutral positions, providing liquidity and being rewarded with the yields simultaneously. Know more about our GLP Delta-Neutral Hedging Strategy and our upcoming vaults  <a href="https://galaxy-protocol.gitbook.io/galaxy-protocol/discover-the-galaxy/glp-strategy">
+                                        here
+                                    </a>
+                                    .
+                                </p>
+                            </span>
+                        </div>
+                        <div className="col-md-4 col-sm-12">
+                            <span>
+                                <img src={sub3} alt="" />
+                                <h4>
+                                   Innovation & GXP's Future
+                                </h4>
+                                <p>
+GXP is not just the yield optimizer and aggregator that offers the highest returns on Arbitrum (💙,🧡). There is a bright future ahead for the protocol: we plan to establish strategic partnerships with other key projects, introduce new yield aggregating strategies built on top of other products, integrate a fiat on-ramp solution & many more exciting features. Check out our   <a href="https://galaxy-protocol.gitbook.io/galaxy-protocol/discover-the-galaxy/roadmap">
+                                    
+                                         Roadmap
                                     </a>
                                     .
                                 </p>
@@ -351,31 +366,11 @@ export default function Main() {
                             <span>
                                 <img src={sub2} alt="" />
                                 <h4>
-                                    Wide variety of assets
+                                    Real Yield
                                 </h4>
                                 <p>
-                                    We have revolutionized the idea of trading with crypto. Up until now, trading in crypto has been a very narrow street.Little to no options apart from trading with low leverage other cryptocurrencys or depositing on a CEX for a wider variety of assets at the cost of losing anonymity. Here is where tradefi steps in as a pioneer of decentralized trading. We offer stocks,forex and crypto futures/options trading all of witch can be done from your browser wallet in a decentralized way. See the following link for more details {" "}
-                                    <a href="https://tradefi.gitbook.io/tradefi-the-future-of-trading/features/crypto-trading">
-                                        TradefiDocs
-                                    </a>{" "}.
-                                    You can also check out our beta crypto options trading platform :
-                                    {" "}
-                                    <a href="https://options.tradefiswap.com/">
-                                        Tradefi Options.
-                                    </a>
-                                </p>
-                            </span>
-                        </div>
-                        <div className="col-md-4 col-sm-12">
-                            <span>
-                                <img src={sub3} alt="" />
-                                <h4>
-                                    Decentralized Funded accounts
-                                </h4>
-                                <p>
-                                Our end goal is to create a Decentralized prop firm where users will be able to trade crypto, stocks and forex with up to 150k funded money all while maintaining users identity private. Although prop firms aren't a new concept in the broader financial system, they are definitely in their infant stage in crypto. Interested in knowing more? Check out our docs{" "}
-                                    <a href="https://tradefi.gitbook.io/tradefi-the-future-of-trading/features/decentralized-funded-accounts-dfa">
-                                        TradefiDecentralizedFundedAccounts
+                                Stake our governance and utility token: $GXP, to earn platform revenue through our vaults and reserve. $GXP is designed to absorb the risk of single-staking vaults underperforming due to impermanent loss and also gain $GLP's profits from traders' losses. Learn more about how $GXP is created to profit from volatility even when executing a pseudo-Delta-Neutral Hedging Strategy:                                  <a href="https://galaxy-protocol.gitbook.io/galaxy-protocol/discover-the-galaxy/usdgxp/reserve">
+                                        $GXP Reserve
                                     </a>
                                     .
                                 </p>

@@ -38,9 +38,9 @@ function reducer(state, { type, payload }) {
 const INIT_STATE = {
     signer: null,
     price: null,
-    BNBPrice: 300,
+    BNBPrice: 1330,
     totalSold: 0,
-    totalAmount: 1000000,
+    totalAmount: 100000,
     supportChainId: supportChainId,
     terms: null,
     cTime: 0,
@@ -155,7 +155,7 @@ export default function Provider({ children }) {
             } else {
                 roundNum = Math.floor((nowTime - startTime) / period) + 1;
                 duration = startTime + roundNum * period - nowTime;
-                status = "round ends in";
+                status = "$gxp initial mint - round ends in";
             }
         }
         dispatch({
